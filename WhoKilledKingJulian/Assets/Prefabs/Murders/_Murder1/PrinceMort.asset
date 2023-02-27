@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6410019b04455df4781e293310b3a50e, type: 3}
+  m_Name: PrinceMort
+  m_EditorClassIdentifier: 
+  m_suspectImage: {fileID: 0}
+  m_suspectInterviewText:
+  - After finishing dinner with my father, I went back to my room to write a letter
+    to my love and then went to bed.
+  - I didn't see anyone as I was in my room.
+  - My father and I had a bit of a rocky relationship at times, but doesnt any father
+    and son.
+  - The chef probably has an issue with my father as hes always complaining about
+    the food.
+  - Well I guess I do as it seems to be my knife.
+  - If i had to say anyone, Id guess it was the chef.
+  m_isMurderer: 0

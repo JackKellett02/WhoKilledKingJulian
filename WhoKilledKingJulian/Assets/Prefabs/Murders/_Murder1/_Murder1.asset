@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0fe1663436bb4a9ed26625828140e, type: 3}
+  m_Name: _Murder1
+  m_EditorClassIdentifier: 
+  m_bodySprite: {fileID: 0}
+  randomiseEvidencePositions: 0
+  m_EvidenceList:
+  - evidenceImage: {fileID: 21300000, guid: 68a8bd4f233910a4196ed3169dc4ab68, type: 3}
+    evidenceDescription: "This peculiar dagger is covered in blood and has initials
+      on it \u2018M.D\u2019"
+    evidencePos: {x: -5, y: -2.5, z: 0}
+  - evidenceImage: {fileID: 21300000, guid: d364714c97f9c234181b9cfc94dd6d3a, type: 3}
+    evidenceDescription: Piece of cloth snagged on the door, its the royal purple
+      worn by the kings staff.
+    evidencePos: {x: -5, y: 2.5, z: 0}
+  - evidenceImage: {fileID: 21300000, guid: fc86f7c2cf1d06f4987237b28546d89e, type: 3}
+    evidenceDescription: The wine in the glass seems to be a bit discolored and smells
+      like poison.
+    evidencePos: {x: 5, y: -2.5, z: 0}
+  - evidenceImage: {fileID: 21300000, guid: bb4595575a22db2429eb0742f9ec7b48, type: 3}
+    evidenceDescription: There is a letter on the desk declaring war on another nation,
+      it was signed by the king.
+    evidencePos: {x: 5, y: 2.5, z: 0}
+  m_suspects:
+  - {fileID: 11400000, guid: fcf0e844a317cdb4d899af2de657a262, type: 2}
+  - {fileID: 11400000, guid: 848c995b782853f498a555cfee705bc2, type: 2}
+  - {fileID: 11400000, guid: c802bf96aadfdec43928e4baefd9d31a, type: 2}
+  - {fileID: 11400000, guid: 19ffa40e9447abd4c8144777bdd694ab, type: 2}
+  m_interviewQuestions:
+  - Where were you last night?
+  - Did you see anyone else last night?
+  - How would you describe your relationship with the king?
+  - Do you know anyone who had issue with the king?
+  - Do you know who has access to the murder weapon?
+  - Who would you say did it ?

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6410019b04455df4781e293310b3a50e, type: 3}
+  m_Name: GuardAlix
+  m_EditorClassIdentifier: 
+  m_suspectImage: {fileID: 0}
+  m_suspectInterviewText:
+  - I was outside the princes room keeping guard
+  - I saw the chef take a drink to the kings room.
+  - The shifts are long and tiring but hes generally nice and treats us well.
+  - The prince would often argue with the king about how he runs the kingdom.
+  - Well the prince of course, its his knife.
+  - It must have been the prince, his room was very quiet so im not even sure he
+    was in his room
+  m_isMurderer: 1

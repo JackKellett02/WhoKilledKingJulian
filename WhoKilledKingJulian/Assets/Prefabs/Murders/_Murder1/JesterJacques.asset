@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6410019b04455df4781e293310b3a50e, type: 3}
+  m_Name: JesterJacques
+  m_EditorClassIdentifier: 
+  m_suspectImage: {fileID: 0}
+  m_suspectInterviewText:
+  - I was in my chambers practising my act for the fair tomorrow.
+  - I saw the prince and king at dinner. I then later saw the guard taking a drink
+    to the king when i went to the bathroom.
+  - The king is great, its an honour to be his court jester
+  - The guard and the prince. The prince often is arguing with how the king runs
+    the land and the guard seems to be sick of fighting in the kings wars.
+  - The prince and the guard both have access.
+  - It was either the guard or the prince, im not sure who would do it though.
+  m_isMurderer: 0
