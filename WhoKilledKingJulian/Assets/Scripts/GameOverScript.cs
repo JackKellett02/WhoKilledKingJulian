@@ -12,6 +12,9 @@ public class GameOverScript : MonoBehaviour
     [SerializeField]
     private GameObject gameLostObject = null;
 
+    public GameObject win;
+    public GameObject lose;
+
     [SerializeField]
     [Range(0.0f, 10.0f)]
     private float gameOverTime = 2.0f;
@@ -30,12 +33,16 @@ public class GameOverScript : MonoBehaviour
             //Show game won frame.
             gameWonObject.SetActive(true);
             gameLostObject.SetActive(false);
+            win.SetActive(true);
+            lose.SetActive(false);
         }
         else
         {
             //Show game lost frame.
             gameWonObject.SetActive(false);
             gameLostObject.SetActive(true);
+            lose.SetActive(true);
+            win.SetActive(false);
         }
     }
 
