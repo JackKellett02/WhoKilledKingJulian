@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6410019b04455df4781e293310b3a50e, type: 3}
   m_Name: PrinceMort
   m_EditorClassIdentifier: 
-  m_suspectImage: {fileID: 0}
+  m_suspectImage: {fileID: 21300000, guid: ce7dd75d880398f41a4bc20e9008de0b, type: 3}
+  m_suspectName: Prince Mort Thaddeus
   m_suspectInterviewText:
   - After finishing dinner with my father, I went back to my room to write a letter
     to my love and then went to bed.

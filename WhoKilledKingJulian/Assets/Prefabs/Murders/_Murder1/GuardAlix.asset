@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6410019b04455df4781e293310b3a50e, type: 3}
   m_Name: GuardAlix
   m_EditorClassIdentifier: 
-  m_suspectImage: {fileID: 0}
+  m_suspectImage: {fileID: 21300000, guid: 4bdc827d9728cd54e8b22c55e03cddce, type: 3}
+  m_suspectName: Guard Alix Smite
   m_suspectInterviewText:
   - I was outside the princes room keeping guard
   - I saw the chef take a drink to the kings room.

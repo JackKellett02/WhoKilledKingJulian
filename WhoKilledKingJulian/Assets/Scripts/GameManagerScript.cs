@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour {
 	#region Variables to assign via the unity inspector (SerializeFields).
@@ -21,6 +22,9 @@ public class GameManagerScript : MonoBehaviour {
 	private TextMeshProUGUI evidenceDescriptionBox = null;
 
 	[Header("Interview Stage References")]
+	[SerializeField]
+	private List<GameObject> suspectScrolls = new List<GameObject>();
+
 
 	[Header("Accuse Stage References")]
 
@@ -53,6 +57,7 @@ public class GameManagerScript : MonoBehaviour {
 	// Start is called before the first frame update
 	void Start() {
 		LoadMurderScene(startingMurderScene);
+		SetStage("murder");
 	}
 
 	// Update is called once per frame
@@ -93,7 +98,7 @@ public class GameManagerScript : MonoBehaviour {
 		} else if (currentStage == Stages.accuseStage) {
 
 		} else if (currentStage == Stages.gameOver) {
-
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
 	}
 
@@ -205,6 +210,35 @@ public class GameManagerScript : MonoBehaviour {
 			evidenceStruct.evidence = evidenceList[i];
 			currentEvidenceList.Add(evidenceStruct);
 		}
+
+		//Load the correct suspect info into the scrolls.
+		List<SuspectSO> suspects = currentMurderScene.GetSuspects();
+		List<string> questions = currentMurderScene.GetInterviewQuestions();
+		for (int i = 0; i < suspects.Count && i < suspectScrolls.Count; i++)
+        {
+			//Get the suspect.
+			SuspectSO suspect = suspects[i];
+			
+			//Get the scroll.
+			ScrollAssignerScript scroll = suspectScrolls[i].GetComponent<ScrollAssignerScript>();
+			
+			//Assign the picture.
+			scroll.AssignSuspectPicture(suspect.GetSuspectImage());
+
+			//Assign the name.
+			scroll.SetSuspectName(suspect.GetSuspectName());
+
+			//Construct the interview text.
+			List<string> interview = suspect.GetSuspectInterviewText();
+			string text = "";
+			for(int j = 0; j < interview.Count && j < questions.Count; j++)
+            {
+				text += ("Q - " + questions[j] + "\n" + "A - " + interview[j] + "\n");
+            }
+
+			//Assign it.
+			scroll.SetSuspectText(text);
+        }
 	}
 	#endregion
 

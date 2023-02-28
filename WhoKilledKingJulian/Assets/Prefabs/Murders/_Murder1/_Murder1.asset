@@ -20,8 +20,8 @@ MonoBehaviour:
       on it \u2018M.D\u2019"
     evidencePos: {x: -5, y: -2.5, z: 0}
   - evidenceImage: {fileID: 21300000, guid: d364714c97f9c234181b9cfc94dd6d3a, type: 3}
-    evidenceDescription: Piece of cloth snagged on the door, its the royal purple
-      worn by the kings staff.
+    evidenceDescription: Piece of cloth snagged on the door, its the royal red worn
+      by the kings staff.
     evidencePos: {x: -5, y: 2.5, z: 0}
   - evidenceImage: {fileID: 21300000, guid: fc86f7c2cf1d06f4987237b28546d89e, type: 3}
     evidenceDescription: The wine in the glass seems to be a bit discolored and smells

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6410019b04455df4781e293310b3a50e, type: 3}
   m_Name: JesterJacques
   m_EditorClassIdentifier: 
-  m_suspectImage: {fileID: 0}
+  m_suspectImage: {fileID: 21300000, guid: 83864846d3e3ce547bbdb731aee06835, type: 3}
+  m_suspectName: Jester Jacques Zipper
   m_suspectInterviewText:
   - I was in my chambers practising my act for the fair tomorrow.
   - I saw the prince and king at dinner. I then later saw the guard taking a drink

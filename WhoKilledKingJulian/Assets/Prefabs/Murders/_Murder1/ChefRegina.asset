@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ChefRegina
   m_EditorClassIdentifier: 
   m_suspectImage: {fileID: 0}
+  m_suspectName: Chef Regina Maze
   m_suspectInterviewText:
   - After dinner I was cleaning up in the kitchen and made a drink for the king and
     then went to bed.
