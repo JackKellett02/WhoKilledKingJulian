@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6410019b04455df4781e293310b3a50e, type: 3}
   m_Name: ChefRegina
   m_EditorClassIdentifier: 
-  m_suspectImage: {fileID: 0}
+  m_suspectImage: {fileID: 21300000, guid: ed7cf11646b36ad41984378665a46691, type: 3}
   m_suspectName: Chef Regina Maze
   m_suspectInterviewText:
   - After dinner I was cleaning up in the kitchen and made a drink for the king and

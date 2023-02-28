@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d0fe1663436bb4a9ed26625828140e, type: 3}
   m_Name: _Murder1
   m_EditorClassIdentifier: 
-  m_bodySprite: {fileID: 0}
+  m_bodySprite: {fileID: 21300000, guid: 61785976c37aa8248b59a0da4eb21c12, type: 3}
+  m_bodyPos: {x: 0, y: 0, z: 0}
   randomiseEvidencePositions: 0
   m_EvidenceList:
   - evidenceImage: {fileID: 21300000, guid: 68a8bd4f233910a4196ed3169dc4ab68, type: 3}
