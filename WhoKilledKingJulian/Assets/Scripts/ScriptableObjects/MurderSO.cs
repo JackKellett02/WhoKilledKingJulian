@@ -11,6 +11,8 @@ public class MurderSO : ScriptableObject {
     [SerializeField]
 	private Vector3 m_bodyPos = Vector3.zero;
 
+	public Vector3 bodyRot;
+
     [Header("Evidence")]
 	[SerializeField]
 	private bool randomiseEvidencePositions = false;
@@ -57,6 +59,7 @@ public class Evidence {
 	public Sprite evidenceImage;
 	public string evidenceDescription;
 	public Vector3 evidencePos;
+	public Vector3 evRot;
 
 	public Evidence(Sprite image, string description, Vector3 pos) {
 		evidenceDescription = description;

@@ -22,6 +22,8 @@ public class GameManagerScript : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI evidenceDescriptionBox = null;
 
+    public GameObject backgroundForCloseup;
+
     [Header("Interview Stage References")]
     [SerializeField]
     private List<GameObject> suspectScrolls = new List<GameObject>();
@@ -95,6 +97,7 @@ public class GameManagerScript : MonoBehaviour
             {
                 evidenceCloseupImage.gameObject.SetActive(false);
                 evidenceDescriptionBox.gameObject.SetActive(false);
+                backgroundForCloseup.gameObject.SetActive(false);
                 return; //Early out.
             }
 
@@ -105,6 +108,8 @@ public class GameManagerScript : MonoBehaviour
             //Set the text.
             evidenceDescriptionBox.gameObject.SetActive(true);
             evidenceDescriptionBox.text = hoverEvidence.evidenceDescription;
+
+            backgroundForCloseup.gameObject.SetActive(true);
         }
         else if (currentStage == Stages.interviewStage)
         {
@@ -181,6 +186,7 @@ public class GameManagerScript : MonoBehaviour
             worldSpaceMurderStage.gameObject.SetActive(false);
             evidenceCloseupImage.gameObject.SetActive(false);
             evidenceDescriptionBox.gameObject.SetActive(false);
+            backgroundForCloseup.gameObject.SetActive(false);
         }
         if (a_sStage != "interview")
         {
@@ -204,6 +210,7 @@ public class GameManagerScript : MonoBehaviour
         GameObject body = Instantiate(spriteRendererPrefab, worldSpaceMurderStage.transform);
         body.transform.position = currentMurderScene.GetBodyPosition();
         body.transform.localScale = Vector3.one * bodyScale;
+        body.transform.rotation = Quaternion.Euler(currentMurderScene.bodyRot);
         bodySprite = body.GetComponent<SpriteRenderer>();
         Sprite sprite = currentMurderScene.GetBodySprite();
         if (sprite != null)
@@ -216,7 +223,7 @@ public class GameManagerScript : MonoBehaviour
         for (int i = 0; i < evidenceList.Count; i++)
         {
             //Instantiate the evidence.
-            GameObject currentEvidence = Instantiate(spriteRendererPrefab, worldSpaceMurderStage.transform);
+            GameObject currentEvidence = Instantiate(spriteRendererPrefab, worldSpaceMurderStage.transform.position, Quaternion.Euler(evidenceList[i].evRot));
             currentEvidence.transform.localScale = Vector3.one * evidenceScale;
 
             if (currentMurderScene.RandomiseEvidencePositions())

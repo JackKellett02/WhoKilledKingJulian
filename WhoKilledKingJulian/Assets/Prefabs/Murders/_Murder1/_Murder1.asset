@@ -14,24 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_bodySprite: {fileID: 21300000, guid: 61785976c37aa8248b59a0da4eb21c12, type: 3}
   m_bodyPos: {x: 0, y: 0, z: 0}
+  bodyRot: {x: 0, y: 0, z: -90}
   randomiseEvidencePositions: 0
   m_EvidenceList:
   - evidenceImage: {fileID: 21300000, guid: 68a8bd4f233910a4196ed3169dc4ab68, type: 3}
     evidenceDescription: "This peculiar dagger is covered in blood and has initials
       on it \u2018M.D\u2019"
-    evidencePos: {x: -5, y: -2.5, z: 0}
+    evidencePos: {x: 2.36, y: -0.73, z: 0}
+    evRot: {x: 0, y: 0, z: 90}
   - evidenceImage: {fileID: 21300000, guid: d364714c97f9c234181b9cfc94dd6d3a, type: 3}
     evidenceDescription: Piece of cloth snagged on the door, its the royal red worn
       by the kings staff.
-    evidencePos: {x: -5, y: 2.5, z: 0}
+    evidencePos: {x: -0.36, y: -2.66, z: 0}
+    evRot: {x: 0, y: 0, z: 70.210754}
   - evidenceImage: {fileID: 21300000, guid: fc86f7c2cf1d06f4987237b28546d89e, type: 3}
     evidenceDescription: The wine in the glass seems to be a bit discolored and smells
       like poison.
-    evidencePos: {x: 5, y: -2.5, z: 0}
+    evidencePos: {x: -6.76, y: -1.2, z: 0}
+    evRot: {x: 0, y: 0, z: -90}
   - evidenceImage: {fileID: 21300000, guid: bb4595575a22db2429eb0742f9ec7b48, type: 3}
     evidenceDescription: There is a letter on the desk declaring war on another nation,
       it was signed by the king.
-    evidencePos: {x: 5, y: 2.5, z: 0}
+    evidencePos: {x: -0.03, y: 3.39, z: 0}
+    evRot: {x: 0, y: 0, z: 180}
   m_suspects:
   - {fileID: 11400000, guid: fcf0e844a317cdb4d899af2de657a262, type: 2}
   - {fileID: 11400000, guid: 848c995b782853f498a555cfee705bc2, type: 2}
